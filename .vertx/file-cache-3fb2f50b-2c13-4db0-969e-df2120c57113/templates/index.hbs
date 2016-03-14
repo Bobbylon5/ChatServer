@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Hello Handlebars</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script src="/Assets/js/SockJS.js" ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+<body>
+	<script >
+		<!--
+		sock = new SockJS('/myapp') 
+		// -->
+	</script>
+	
+	<h1>This is my Forum!</h1>
+	
+	
+	<h1>Hello
+	<script type="text/javascript">
+		<!--
+		var answer = prompt ("What is your name ?","")
+		alert ("Hello there, " + answer)
+		sock.send(answer)
+		// -->
+		sock.onmessage = function(d) {
+
+			$("#name").html("It's me");
+
+			$('#messageList').addChild(-1, "<li><div>name</div><div>message</div></li>")
+		};
+	</script> 
+	<script>
+		document.write("" + answer )
+	</script>
+	!</h1>
+  <br/>
+  <h1>People online today include: <div id="name">    name   </div>!</h1>
+  <br/>
+  <h2> Messages start here </h2>
+  <ul id="messageList">
+  </ul>
+  <br/>
+  <br/>
+
+  
+  
+</body>
+</html>
